@@ -18,8 +18,6 @@ module Goliath
         env.each do |key, value|
           headers[$1] = value if key =~ /HTTP_(.*)/
         end
-        headers['CONTENT_TYPE'] = env['CONTENT_TYPE']
-        headers['HTTP_HOST'] = env['SERVER_NAME']
         headers['X-Forwarded-Host'] = env['HTTP_HOST']
         headers['REMOTE_USER'] = env['REMOTE_USER']
 
