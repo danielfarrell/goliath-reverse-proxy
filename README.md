@@ -7,6 +7,17 @@ Dependencies
 ============
 All the work is done by em-http-request, em-syncrony, and goliath.
 
+
+Install
+=======
+
+  gem install goliath-reverse-proxy
+
+or add to your Gemfile
+
+  gem 'goliath-reverse-proxy'
+
+
 Example
 =======
 
