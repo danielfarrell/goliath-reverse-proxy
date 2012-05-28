@@ -1,10 +1,7 @@
 goliath-reverse-proxy
 =====================
 
-Kerberos/GSSAPI authentication (Basic and Negotiate) rack middleware.
-
-Actually this middleware should (hopefully) work for standard Rack
-application and as a Goliath middleware.
+Goliath reverse proxy middleware. Forwards all requests to another server.
 
 Dependencies
 ============
