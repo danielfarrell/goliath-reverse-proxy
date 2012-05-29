@@ -19,7 +19,7 @@ module Goliath
           headers[$1] = value if key =~ /HTTP_(.*)/
         end
         headers['X-Forwarded-Host'] = env['HTTP_HOST']
-        headers['REMOTE_USER'] = env['REMOTE_USER']
+        headers['X-Forwarded-User'] = env['REMOTE_USER'] if env['REMOTE_USER']
 
         params = {:head => headers}
         params[:body] = env['params'] if [:put, :post, :patch].include? method
