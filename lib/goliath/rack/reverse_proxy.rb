@@ -28,7 +28,7 @@ module Goliath
 
       def request_headers(env, headers)
         env.each do |key, value|
-          headers[$1] = value if key =~ /HTTP_(.*)/
+          headers[$1.gsub('_', '-').downcase] = value if key =~ /HTTP_(.*)/
         end
         headers['X-Forwarded-Host'] = env['HTTP_HOST']
         headers['X-Forwarded-User'] = env['REMOTE_USER'] if env['REMOTE_USER']
