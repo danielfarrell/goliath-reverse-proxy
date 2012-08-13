@@ -13,6 +13,10 @@ class ResponseHeader < Hash
   def status=(status)
     @status = status
   end
+
+  def raw
+    self
+  end
 end
 
 class Response

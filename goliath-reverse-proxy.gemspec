@@ -2,7 +2,7 @@ require 'rubygems'
 
 Gem::Specification.new do |gem|
   gem.name      = 'goliath-reverse-proxy'
-  gem.version   = '0.1.2'
+  gem.version   = '0.2.0'
   gem.authors   = ["Daniel Farrell"]
   gem.email     = 'danielfarrell76@gmail.com'
   gem.homepage  = 'https://github.com/danielfarrell/goliath-reverse-proxy'
@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "goliath"
   gem.add_dependency "em-synchrony"
-  gem.add_dependency "em-http-request"
+  gem.add_dependency "em-http-request", "~> 1.0.3"
 
   gem.add_development_dependency "rspec", "~> 2.10"
 
